@@ -1,0 +1,57 @@
+/* 水平间距 */
+/* 水平间距 */
+.page-section {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #FAFCFF;
+}
+.slot-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slot-text {
+  flex: 1;
+  font-size: 14px;
+  color: gray;
+  margin-right: 10px;
+}
+.slot-left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.slot-left-box .title {
+  color: #384144;
+}
+.slot-left-box .p0 {
+  color: #e7c500;
+}
+.slot-left-box .p1 {
+  color: #c5c4c4;
+}
+.slot-left-box .p2 {
+  color: #df683d;
+}
+.slot-left-box .note {
+  color: #999999;
+  font-size: 12px;
+}
+
+/* 空状态 */
+.empty {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+.empty .content_img image {
+  width: 500rpx;
+}
+.empty .content_txt {
+  margin-top: 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #333;
+}

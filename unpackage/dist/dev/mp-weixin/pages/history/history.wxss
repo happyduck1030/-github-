@@ -1,0 +1,133 @@
+/* 水平间距 */
+/* 水平间距 */
+.page-section {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #FAFCFF;
+}
+.slot-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slot-image {
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.slot-text {
+  flex: 1;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.right_text {
+  line-height: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.slot-left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.slot-left-box .title {
+  color: #384144;
+}
+.slot-left-box .note {
+  color: #999999;
+  font-size: 12px;
+}
+.rank {
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #d8d8d8;
+}
+.r1 {
+  width: 7vw;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.r1t {
+  margin: -5rpx;
+}
+.yesterday {
+  white-space: nowrap;
+  display: flex;
+  background-color: #F0F3F6;
+  width: 93vw;
+}
+.nobody {
+  display: inline-block;
+  width: 730rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  height: 100rpx;
+  margin: 10rpx;
+}
+.intxt {
+  color: #ccc;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.somebody {
+  display: inline-block;
+  width: 200rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  height: 100rpx;
+  margin: 10rpx;
+}
+.in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.p0 {
+  color: #e7c500;
+}
+.p1 {
+  color: #c5c4c4;
+}
+.p2 {
+  color: #df683d;
+}
+.name {
+  font-size: 40rpx;
+}
+.time {
+  display: block;
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+/* 空状态 */
+.empty {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+.empty .content_img image {
+  width: 500rpx;
+}
+.empty .content_txt {
+  margin-top: 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #333;
+}

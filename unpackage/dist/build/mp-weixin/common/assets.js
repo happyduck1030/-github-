@@ -1,0 +1,1 @@
+"use strict";exports._imports_0="/static/images/empty.png",exports._imports_0$1="/static/images/avatar.png",exports._imports_0$2="/static/images/freeChair.png",exports._imports_0$3="/static/images/chicken.gif",exports._imports_1="/static/images/unfreeChair.png",exports._imports_2="/static/images/tab-3.png";

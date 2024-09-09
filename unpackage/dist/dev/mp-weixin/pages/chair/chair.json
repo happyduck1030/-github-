@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "座位详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "custom-modal": "../../component/custom-modal/custom-modal",
+    "uni-notice-bar": "../../uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar"
+  }
+}

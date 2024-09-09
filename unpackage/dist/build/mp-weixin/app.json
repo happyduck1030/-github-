@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/history/history",
+    "pages/seat/seat",
+    "pages/rank/rank",
+    "pages/openDoor/openDoor",
+    "pages/chair/chair"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#349cdc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "定位",
+        "iconPath": "static/images/tab-1.png",
+        "selectedIconPath": "static/images/tab-1c.png"
+      },
+      {
+        "pagePath": "pages/seat/seat",
+        "text": "座位",
+        "iconPath": "static/images/tab-3.png",
+        "selectedIconPath": "static/images/tab-3c.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "记录",
+        "iconPath": "static/images/tab-2.png",
+        "selectedIconPath": "static/images/tab-2c.png"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "startLocationUpdate"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "要获取用户当前位置"
+    }
+  },
+  "usingComponents": {}
+}

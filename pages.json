@@ -1,0 +1,86 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "图灵实验室打卡记录",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/seat/seat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "西区大学生活动中心",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/rank/rank",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "总排名",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/openDoor/openDoor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修正实验室开门状态",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/chair/chair",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "座位详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"selectedColor": "#349cdc",	
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "定位",
+				"iconPath": "static/images/tab-1.png",
+				"selectedIconPath": "static/images/tab-1c.png"
+			},
+			{
+				"pagePath": "pages/seat/seat",
+				"text": "座位",
+				"iconPath": "static/images/tab-3.png",
+				"selectedIconPath": "static/images/tab-3c.png"
+			},
+			{
+				"pagePath": "pages/history/history",
+				"text": "记录",
+				"iconPath": "static/images/tab-2.png",
+				"selectedIconPath": "static/images/tab-2c.png"
+			}
+		]
+	}
+}

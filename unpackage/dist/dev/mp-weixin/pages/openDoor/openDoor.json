@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "修正实验室开门状态",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "custom-modal": "../../component/custom-modal/custom-modal"
+  }
+}

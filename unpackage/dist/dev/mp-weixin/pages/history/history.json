@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "图灵实验室打卡记录",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "custom-modal": "../../component/custom-modal/custom-modal",
+    "uni-list-item": "../../uni_modules/uni-list/components/uni-list-item/uni-list-item",
+    "uni-list": "../../uni_modules/uni-list/components/uni-list/uni-list"
+  }
+}

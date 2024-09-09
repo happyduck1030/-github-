@@ -1,0 +1,331 @@
+/* pages/query/animation.wxss */
+.jello {
+  animation: jello 0.9s both;
+}
+@keyframes jello {
+0% {
+    transform: scale3d(1, 1, 1);
+}
+30% {
+    transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+    transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+    transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+    transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+    transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+    transform: scale3d(1, 1, 1);
+}
+}
+@keyframes rotate {
+100% {
+    transform: rotate(1turn);
+}
+}
+.f {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.f::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(transparent, #73b6fd, transparent 30%);
+  animation: rotate 4s linear infinite;
+}
+.f::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #A3D0FF;
+  border-radius: 5px;
+}
+.popup-text{
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	width: 150px;
+	background-color: #fff;
+	border-radius: 18px;
+	padding:10rpx 0;
+}
+/* 服务器 */
+.server{
+	width: 170rpx;
+	height: 6vh;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 打印机 */
+.printer{
+	width: 70rpx;
+	height: 6vh;
+	/*26vh*/
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 长桌 */
+.long{
+	width: 200rpx;
+	height: 90rpx;
+	background: #FC9D8A;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 空调 */
+.air-conditioner{
+	width: 70rpx;
+	height: 70rpx;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 书柜 */
+.bookcase{
+	width: 70rpx;
+	height: 23vh;
+	/*26vh*/
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 工位 */
+.member {
+	background: #FC9D8A;
+	width: 110rpx;
+	height: 90rpx;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 卡座 */
+.station{
+	background: #FC9D8A;
+	width: 125rpx;
+	height: 90rpx;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+	box-sizing: border-box;
+}
+/* 座位 */
+.seat{
+	width: 71rpx;
+	height: 71rpx;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+	text-align: center;
+	line-height: 71rpx;
+	vertical-align: middle;
+}
+/* 成员名字样式 */
+.members_name{
+	display: block; 
+	height: 90rpx;
+	text-align: center;
+	line-height: 90rpx;
+	overflow: hidden;
+	margin: 0 auto;
+	color: #fff;
+}
+/* 间隙 */
+.interval{
+	background: #cececc;
+	margin: 5rpx auto;
+	width: 90%;
+	border: 3rpx solid #cececc;
+	border-rdius: 10rpx;
+}
+/* 饮水机 */
+.water{
+	width: 200rpx;
+	height: 70rpx;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 10rpx;
+}
+/* 没被坐的座位 */
+.free{
+  background: #EAE9DE;
+}
+/* 被坐的座位 */
+.busy{
+	background: #A3D0FF;
+}
+.page-section {
+    width: 750rpx;
+    height: 100vh;
+    padding-top: 13rpx;
+    background-color: #fbfaef;
+}
+.top{
+	display: flex;
+	width: 750rpx;
+	height: 30%;
+}
+.top .top-left{
+	flex: 1;
+}
+/* 打印机 */
+.top .top-left .machine1{
+	margin: 3% 0 0 3%;
+}
+/* 大门 */
+.top .top-left .door{
+	margin: 15vh 0 0 3%;
+	width: 70rpx;
+	height: 7vh;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 0 0 77rpx 0;
+}
+.top .top-mid{
+	flex: 5;
+	height: 100%;
+}
+/* 服务器 */
+.top .top-mid .machine2{
+	margin: 1% 0 0 50%;
+}
+/* 工位 */
+.top .top-mid .memberGroup{
+	margin: 10% 0 0 1%;
+	width: 500rpx;
+	height: 15vh;
+	display: flex;
+	flex-direction: column;
+}
+/* 靠墙那排桌子 */
+.top .top-mid .memberGroup .row1{
+	display: flex;
+	flex: 5;
+	justify-content: space-evenly;
+}
+/* 靠走廊的桌子 */
+.top .top-mid .memberGroup .row2{
+	flex: 5;
+	display: flex;
+	justify-content: space-evenly;
+}
+.top .top-right{
+	flex: 1;
+}
+/* 空调 */
+.top .top-right .air{
+	margin: 10% 0 10% 20%;
+}
+/* 书柜 */
+.top .top-right .book{
+	margin: 15% 0 0 20%;
+}
+.main{
+	display: flex;
+	width: 750rpx;
+	height: 46%;
+}
+/* 座位 */
+.main .main-left{
+	flex: 5;
+	padding-left: 5%;
+}
+.main .main-left .row, .main .main-right .row{
+	display: flex;
+	justify-content: space-evenly;
+}
+/* 座位 第一排 , 第三排 */
+.main .main-left .first, .main .main-left .third{
+	margin: 40% auto 0;
+}
+/* 过道 */
+.main .main-mid{
+	flex: 3;
+}
+/* 卡座 */
+.main .main-right{
+	flex: 5;
+	padding-right: 3%;
+}
+/* 卡座 第一排 第三排 */
+.main .main-right .first, .main .main-right .third{
+	margin: 45% auto 0;
+}
+.bottom{
+	display: flex;
+	width: 750rpx;
+	height: 20%;
+}
+.bottom .bottom-left{
+	flex: 2;
+}
+/* 门 左边 */
+.bottom .bottom-left .door{
+	margin: 5% 0 0 2%;
+	width: 70rpx;
+	height: 7vh;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 0 77rpx 0 0;
+}
+/* 饮水机 */
+.bottom .bottom-left .water{
+	margin: 30% 0 0 10%;
+}
+.bottom .bottom-mid{
+	flex: 2;
+}
+/* 门 底下 */
+.bottom .bottom-mid .door{
+	margin: 70% auto 2%;
+	width: 70rpx;
+	height: 7vh;
+	background: #FFD6B8;
+	border: 3rpx solid #464643;
+	border-radius: 0 77rpx 0 0;
+}
+.bottom .bottom-right{
+	flex: 3;
+	display: flex;
+}
+/* 长桌 */
+.bottom .bottom-right .table{
+	margin: 47% 2% 0 0;
+}
+/* 空调 */
+.bottom .bottom-right .side{
+	margin: 53% 0 0 8%;
+}
+/* 遮罩层 */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.block {
+	font-size: 14px;
+	text-align: center;
+	line-height: 60px;
+	width: 120px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 10px
+}
+
